@@ -4,7 +4,7 @@ _TASK_02_
 
 _Task Description_
 
-This project aims to develop a machine learning model to detect fraudulent credit card transactions. Using a dataset of credit card transactions, we train and evaluate several classification algorithms, including Logistic Regression, Decision Trees, and Random Forests, to classify transactions as fraudulent or legitimate.
+This task aims to develop a machine learning model to detect fraudulent credit card transactions. Using a dataset of credit card transactions, we train and evaluate several classification algorithms, including Logistic Regression, Decision Trees, and Random Forests, to classify transactions as fraudulent or legitimate.
 
 _Steps and Implementation_
 
@@ -53,7 +53,7 @@ Visualizations: ROC curve, confusion matrix, and feature importances.
 Best model file (best_model_balanced.pkl).
 
 
-_TASK_04_
+_TASK_03_
 
 **Customer Churn Prediction**
 
@@ -98,3 +98,52 @@ Displayed evaluation metrics in bar plots for easy comparison.
 _Visualization:_
 
 Plotted performance metrics for each model to visualize and compare their effectiveness.
+
+
+_TASK_04_
+
+**Spam SMS Detection**
+
+In this task, an AI model is built to classify SMS messages as either spam or legitimate (ham). The task involves using text classification techniques and various machine learning algorithms to identify spam messages accurately.
+
+_Data Preprocessing_
+
+1. Dataset: The dataset used is spam.csv, which contains SMS messages labeled as 'spam' or 'ham'.
+
+2. Processing:
+
+1. Removed unnecessary columns from the dataset.
+   
+2. Renamed columns for clarity.
+   
+3. Mapped categorical labels ('spam', 'ham') to binary values (1, 0).
+
+_Feature Extraction_
+
+1. Utilized TF-IDF Vectorizer to transform SMS messages into numerical features while ignoring common English stop words.
+
+_Model Training and Evaluation_
+
+1. Split the dataset into training and test sets.
+   
+2. Trained three different models:
+   
+1. Naive Bayes: MultinomialNB
+   
+2. Logistic Regression: LogisticRegression
+   
+3. Support Vector Machine (SVM): SVC
+   
+3. Evaluated model performance using accuracy, classification report, and confusion matrix.
+   
+_Visualization_
+
+1. Plotted confusion matrices for each model to visualize classification performance.
+   
+2. Created a bar chart comparing the accuracy of the models.
+   
+_Model Saving_
+
+1. Saved the best-performing model's accuracy score using joblib.
+   
+_This approach provides a comprehensive method for detecting spam messages using text classification techniques and evaluates different models to determine the most effective one._
