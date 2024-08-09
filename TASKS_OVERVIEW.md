@@ -10,47 +10,48 @@ _Steps and Implementation_
 
 1. Data Loading and Cleaning
    
-Loaded the fraudTrain.csv and fraudTest.csv datasets.
+1. Loaded the fraudTrain.csv and fraudTest.csv datasets.
 
-Dropped unnecessary columns (Unnamed: 0, trans_num) and converted date columns to datetime format.
+2. Dropped unnecessary columns (Unnamed: 0, trans_num) and converted date columns to datetime format.
 
 2. Feature Engineering
    
-Extracted new features from the date columns, such as transaction hour and day of the week.
+1. Extracted new features from the date columns, such as transaction hour and day of the week.
 
-Dropped the original date columns after feature extraction.
+2. Dropped the original date columns after feature extraction.
 
 3. Data Preprocessing
    
-Split the data into features (X_train, X_test) and labels (y_train, y_test).
+1. Split the data into features (X_train, X_test) and labels (y_train, y_test).
 
-Defined preprocessing pipelines for numerical (imputation, scaling) and categorical (imputation, one-hot encoding) data.
+2. Defined preprocessing pipelines for numerical (imputation, scaling) and categorical (imputation, one-hot encoding) data.
 
-Applied transformations using a column transformer.
+3. Applied transformations using a column transformer.
+   
 
 4. Model Training and Evaluation
    
-Trained and evaluated three models:
+ Trained and evaluated three models:
 
-Logistic Regression: Used balanced class weights and evaluated with classification report and ROC AUC score. Plotted ROC curve.
+1. Logistic Regression: Used balanced class weights and evaluated with classification report and ROC AUC score. Plotted ROC curve.
 
-Decision Tree: Evaluated with classification report and ROC AUC score. Plotted confusion matrix.
+2. Decision Tree: Evaluated with classification report and ROC AUC score. Plotted confusion matrix.
 
-Random Forest: Trained with balanced class weights, evaluated with classification report and ROC AUC score, and plotted feature importances.
+3. Random Forest: Trained with balanced class weights, evaluated with classification report and ROC AUC score, and plotted feature importances.
 
 5. Model Saving
    
-Saved the preprocessed data and the best-performing model for future use.
+   Saved the preprocessed data and the best-performing model for future use.
 
 _Deliverables_
 
-Preprocessed data files.
+1. Preprocessed data files.
 
-Trained models with evaluation metrics.
+2. Trained models with evaluation metrics.
 
-Visualizations: ROC curve, confusion matrix, and feature importances.
+3. Visualizations: ROC curve, confusion matrix, and feature importances.
 
-Best model file (best_model_balanced.pkl).
+4. Best model file (best_model_balanced.pkl).
 
 
 _TASK_03_
@@ -63,27 +64,27 @@ Steps Performed:
 
 _Data Preprocessing:_
 
-Loaded and inspected the dataset.
+1. Loaded and inspected the dataset.
 
-Handled categorical features (Geography, Gender) using Label Encoding.
+2. Handled categorical features (Geography, Gender) using Label Encoding.
 
-Dropped non-essential columns (RowNumber, CustomerId, Surname) and set Exited as the target variable.
+3. Dropped non-essential columns (RowNumber, CustomerId, Surname) and set Exited as the target variable.
 
 
 _Feature Scaling:_
 
-Applied Standard Scaling to normalize features.
+   Applied Standard Scaling to normalize features.
 
 
 _Model Training:_
 
 Implemented three classification algorithms:
 
-Logistic Regression
+1. Logistic Regression
 
-Random Forest Classifier
+2. Random Forest Classifier
 
-Gradient Boosting Classifier
+3. Gradient Boosting Classifier
 
 Trained each model on the training set.
 
